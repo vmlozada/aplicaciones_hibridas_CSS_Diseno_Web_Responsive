@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "Dancing_Script";
+  src: url("../fuentes/Dancing_Script.ttf");
+}
+
+body{
+  background-color: #02010a;
+  font-family: "Dancing_Script";
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: 2px !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+header{
+  color: #FFFFFF;
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+	flex-direction: row;
+  animation: miAnimacion 3s;
+}
+
+header h1{
+  text-shadow: 2px 2px 2px #02010a;
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  width: 100%;
+  margin: 10px;
+}
+
+#menu-principal {
+  width: 100%;
+  text-align: center;
+}
+
+#menu-principal ul li {
+	list-style-type: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+#menu-principal a{
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
+}
+
+#menu-principal li a.menuSeleccionado{
+  text-decoration: none;
+}
+
+img{
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+#zona1{
+  background-color: #82c3a6;
+  text-align: center;
+  padding: 10px;
+}
+
+#zona1 img{
+  width: 100%;
+}
+
+#zona2{
+  background-color:  #d5c75f;
+  border: 1px;
+  padding: 15px;
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+#zona2 figcaption{
+  text-decoration: underline;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.c1, .c2{
+  width: 100%;
+  text-align: center;
+}
+
+.c1 img, .c2 img{
+  width: 100%;
+}
+
+.c1 a, .c1 a:hover, .c1 a:focus, .c1 a:visited, .c1 a:active,
+.c2 a, .c2 a:hover, .c2 a:focus, .c2 a:visited, .c2 a:active{
+  text-decoration: underline;
+  color: #000000;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
+}
+
+#imagen2 img{
+  transition: transform 2s;
+}
+
+#imagen2 img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
+}
+
+#imagen3 img{
+  transition: transform 1s;
+}
+
+#imagen3 img:hover{
+  transform: translate(10px,-5px);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
+}
+
+footer{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #C6d5c5;
+}
+
+.footer{
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.c3, .c4, .c5, .c6{
+  width: 100%;
+}
+
+.titulo{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.c3 ul, .c4 ul, .c5 ul, .c6 ul{
+  padding-left: 0px;
+}
+
+.c3 ul li, .c4 ul li, .c5 ul li, .c6 ul li{
+	list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.icono{
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
+  border: 0px !important;
+  vertical-align: middle;
+  box-shadow: none !important;
+}
+
+#contenido{
+  width: 100%;
+}
+
+#galeria{
+  background-color: #d5c75f;
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  width: 100%;
+  text-align: center;
+}
+
+#galeria .col3{
+  width: 100%;
+}
+
+#galeria figure{
+  width: 95%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#galeria img{
+  width: 95%;
+
+}
+
+#galeria div:first-child img{
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#galeria div:nth-child(even) img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#galeria div:nth-child(3) img{
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+@-webkit-keyframes miAnimacion{
+  0%{
+    margin-top: 150%;
+  }
+
+  60%{
+    margin-top: -5%;
+  }
+
+  100%{
+    margin-top: 0%;
+  }
+}
+
+@media (min-width: 900px) {
+  #menu-principal {
+    width: 50%;
+    text-align: right;
+  }
+
+  header h1{
+    width: 50%;
+    text-align: left;
+  }
+
+  .c1, .c2{
+    width: 50%;
+  }
+
+	.c3, .c4, .c5, .c6 {
+		width: 25%;
+	}
+
+  #contenido{
+    max-width: 900px;
+    margin: 0px auto;
+  }
+
+  #zona1 img{
+    width: 95%;
+  }
+
+  #galeria .col3{
+    width: 31%;
+  }
+
+  #galeria figure, #galeria img{
+    width: 95%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
